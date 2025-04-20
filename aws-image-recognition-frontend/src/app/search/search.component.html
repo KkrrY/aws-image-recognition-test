@@ -1,0 +1,48 @@
+<div class="container">
+
+  <div class="title">
+    Image Recognition
+  </div>
+
+  <label for="fileInput" class="file-label">Select an image:</label>
+  <div class="file-upload-section">
+    <input type="file" id="fileInput" (change)="onFileSelected($event)" class="file-input">
+    <button (click)="upload()" class="upload-button">Upload</button>
+  </div>
+
+  <div class="search-label">
+    Search for images containing:
+  </div>
+  <div class="search-section">
+    <input [(ngModel)]="searchTerm" placeholder="e.g. Ball" class="search-input">
+    <button (click)="search()" class="search-button">🔍 Search</button>
+  </div>
+
+
+  <div *ngIf="results?.length" class="results-container">
+    <div *ngFor="let image of results" class="result-card">
+      <img [src]="image" alt="result" class="result-image" (click)="openPreview(image)">
+    </div>
+  </div>
+
+  <div *ngIf="results?.length === 0" class="no-results">
+    No results found.
+  </div>
+
+  <div *ngIf="allImages?.length" class="all-images-container">
+    <div class="all-images-title">All Uploaded Images</div>
+    <div class="all-images-grid">
+      <div *ngFor="let img of allImages" class="image-thumb">
+        <img [src]="img" alt="uploaded" (click)="openPreview(img)">
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div *ngIf="previewImage" class="preview-overlay" (click)="closePreview()">
+    <img [src]="previewImage" class="preview-image" alt="Previewed Image">
+  </div>
+
+</div>
