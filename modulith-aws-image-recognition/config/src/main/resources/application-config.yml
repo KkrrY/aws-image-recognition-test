@@ -1,0 +1,38 @@
+spring:
+
+  jpa:
+    show_sql: false
+    properties:
+      hibernate:
+        format_sql: false
+    hibernate:
+      ddl-auto: create-drop
+
+logging:
+  level:
+    root: info
+    org.springframework.kafka.*: warn
+    org.apache.kafka.*: warn
+    com:
+      marketplace:
+        common: debug
+        security: debug
+
+dev:
+  environment: ${DEV_ENVIRONMENT}
+
+cloud:
+  aws:
+    credentials:
+      access-key: ${AWS_ACCESS_KEY}
+      secret-key: ${AWS_SECRET_ACCESS_KEY}
+    region:
+      static: ${AWS_REGION}
+      rekognition: ${AWS_REKOGNITION_REGION}
+    stack:
+      auto: false
+
+application:
+  image:
+    bucket:
+      name: ${AWS_IMAGE_BUCKET}

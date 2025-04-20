@@ -1,0 +1,4 @@
+#setting profiles allows to resolve submodules .yml file configurations
+spring:
+  profiles:
+    include: config, core, common, security, authorization, aws-s3, image-recognition

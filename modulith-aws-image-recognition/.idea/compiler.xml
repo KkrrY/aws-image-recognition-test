@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.30/f195ee86e6c896ea47a1d39defbe20eb59cd149d/lombok-1.18.30.jar" />
+        </processorPath>
+        <module name="modulith-aws-image-recognition.config.main" />
+        <module name="modulith-aws-image-recognition.application.main" />
+        <module name="modulith-aws-image-recognition.aws-rekognition.main" />
+        <module name="modulith-aws-image-recognition.core.http-paths.main" />
+        <module name="modulith-aws-image-recognition.image-recognition.test" />
+        <module name="modulith-aws-image-recognition.core.main" />
+        <module name="modulith-aws-image-recognition.image-recognition-api.main" />
+        <module name="modulith-aws-image-recognition.core.common.test" />
+        <module name="modulith-aws-image-recognition.application.test" />
+        <module name="modulith-aws-image-recognition.aws-rekognition.test" />
+        <module name="modulith-aws-image-recognition.aws-s3.main" />
+        <module name="modulith-aws-image-recognition.core.common.main" />
+        <module name="modulith-aws-image-recognition.core.test" />
+        <module name="modulith-aws-image-recognition.image-recognition-api.test" />
+        <module name="modulith-aws-image-recognition.aws-s3.test" />
+        <module name="modulith-aws-image-recognition.aws-rekognition-api.main" />
+        <module name="modulith-aws-image-recognition.aws-s3-api.test" />
+        <module name="modulith-aws-image-recognition.image-recognition.main" />
+        <module name="modulith-aws-image-recognition.aws-s3-api.main" />
+        <module name="modulith-aws-image-recognition.config.test" />
+        <module name="modulith-aws-image-recognition.aws-rekognition-api.test" />
+        <module name="modulith-aws-image-recognition.core.http-paths.test" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="17" />
+  </component>
+</project>

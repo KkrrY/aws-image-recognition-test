@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'modulith-aws-image-recognition'
+
+include 'application'
+include 'core'
+include 'config'
+include 'core:common'
+include 'core:http-paths'
+
+findProject(':core:common')?.name = 'common'
+findProject(':core:http-paths')?.name = 'http-paths'
+include 'aws-s3'
+include 'aws-s3-api'
+include 'image-recognition'
+include 'image-recognition-api'
+include 'aws-rekognition'
+include 'aws-rekognition-api'
+
