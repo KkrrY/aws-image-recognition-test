@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Image Search</title>
+  <link rel="stylesheet" th:href="@{/css/search.component.css}" />
+</head>
+<body class="container">
+
+<script th:src="@{/js/open.preview.js}"></script>
+
+<h2 class="title">Upload Image</h2>
+<form th:action="@{${routes.view} + ${routes.viewImagesUpload}}" method="post" enctype="multipart/form-data">
+  <div class="file-upload-section">
+    <input type="file" name="file" class="file-input" required />
+    <button type="submit" class="upload-button">Upload</button>
+  </div>
+</form>
+
+<h2 class="all-images-title">All Images</h2>
+<div class="all-images-grid">
+  <div th:each="img : ${allImages}" class="image-thumb">
+    <img th:src="${img}" onclick="openPreview(this.src)"/>
+  </div>
+</div>
+
+
+<!--Closing preview upon clicking when image is in preview state-->
+<div id="previewOverlay" class="preview-overlay" style="display: none;" onclick="closePreview()">
+  <img id="previewImage" class="preview-image" alt="Preview">
+</div>
+
+</body>
+</html>

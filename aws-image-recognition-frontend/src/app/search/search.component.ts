@@ -67,4 +67,5 @@ export class SearchComponent implements OnInit {
         error: err => console.error('Search failed', err)
       });
   }
+
 }

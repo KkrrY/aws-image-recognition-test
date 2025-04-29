@@ -17,14 +17,14 @@ public class ImageRecognitionController {
 
     private final ImageRecognitionService imageRecognitionService;
 
-    @PostMapping(IMAGE_RECOGNITION_UPLOAD)
+    @PostMapping(ImageRecognition.IMAGE_RECOGNITION_UPLOAD)
     public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file) {
         String key = file.getOriginalFilename();
         imageRecognitionService.saveImage(key, file);
         return ResponseEntity.ok("File uploaded successfully: " + key);
     }
 
-    @PostMapping(IMAGE_RECOGNITION_SEARCH)
+    @PostMapping(ImageRecognition.IMAGE_RECOGNITION_SEARCH)
     public ResponseEntity<List<String>> searchForImages(@PathVariable("key") String keyword) {
         return ResponseEntity.ok(imageRecognitionService.searchImages(keyword));
     }

@@ -9,4 +9,5 @@ dependencies {
     implementation project(":aws-rekognition-api")
     implementation project(":image-recognition")
     implementation project(":image-recognition-api")
+    implementation project(":image-recognition-web")
 }

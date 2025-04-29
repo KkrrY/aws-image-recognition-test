@@ -21,4 +21,5 @@ include 'image-recognition'
 include 'image-recognition-api'
 include 'aws-rekognition'
 include 'aws-rekognition-api'
+include 'image-recognition-web'
 

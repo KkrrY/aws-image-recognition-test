@@ -3,6 +3,7 @@
 A full-stack application that enables users to search for images based on objects using intelligent image recognition.
 
 > 🔗 **[Live Demo](http://staticjshostablewebresource.s3-website.eu-north-1.amazonaws.com/)**
+> 🔗 **[Server image recognition WEB](http://ec2-3-68-185-147.eu-central-1.compute.amazonaws.com:8080/view/images)**
 
 ---
 

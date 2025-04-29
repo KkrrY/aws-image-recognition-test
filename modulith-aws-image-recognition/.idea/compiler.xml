@@ -25,9 +25,11 @@
         <module name="modulith-aws-image-recognition.aws-rekognition-api.main" />
         <module name="modulith-aws-image-recognition.aws-s3-api.test" />
         <module name="modulith-aws-image-recognition.image-recognition.main" />
+        <module name="modulith-aws-image-recognition.image-recognition-web.test" />
         <module name="modulith-aws-image-recognition.aws-s3-api.main" />
         <module name="modulith-aws-image-recognition.config.test" />
         <module name="modulith-aws-image-recognition.aws-rekognition-api.test" />
+        <module name="modulith-aws-image-recognition.image-recognition-web.main" />
         <module name="modulith-aws-image-recognition.core.http-paths.test" />
       </profile>
     </annotationProcessing>

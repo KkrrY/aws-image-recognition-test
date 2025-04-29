@@ -12,7 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 
 import static com.http.paths.ApiRouteConstants.API_V1;
-import static com.http.paths.ApiRouteConstants.AWS_REKOGNITION_IDENTIFY;
+import static com.http.paths.ApiRouteConstants.AwsRekognition.AWS_REKOGNITION_IDENTIFY;
 
 @RestController
 @RequiredArgsConstructor
